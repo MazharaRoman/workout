@@ -5,6 +5,7 @@ import HeadBar from '../UI/HeadBar/HeadBar';
 
 export default props => (
     <div className="Screen">
+        <HeadBar />
         <main className="Main">{props.children}</main>
         <footer>footer</footer>
     </div>

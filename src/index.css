@@ -9,7 +9,6 @@ body {
     min-height: 100vh;
 }
 
-header,
 main,
 footer {
     display: flex;
@@ -21,7 +20,6 @@ footer {
     padding: 5px 5px;
 }
 
-header,
 footer {
     flex-direction: row;
 }
@@ -32,4 +30,9 @@ footer {
 main {
     flex-direction: column;
     flex: 1;
+}
+
+.Header {
+    border: 1px solid black;
+    margin: 10px 10px;
 }

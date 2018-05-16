@@ -10,8 +10,6 @@ import Layout from './components/Layout/Layout';
 import Planner from './containers/Planner/Planner';
 import HeadBar from './components/UI/HeadBar/HeadBar';
 
-import AppBar from 'material-ui/AppBar';
-
 /**
  * A simple example of `AppBar` with an icon on the right.
  * By default, the left icon is a navigation-menu.
@@ -29,15 +27,9 @@ const darkBaseTheme = createMuiTheme({
 class App extends Component {
     render() {
         return (
-            <MuiThemeProvider>
-                <AppBar
-                    title="Title"
-                    iconClassNameRight="muidocs-icon-navigation-expand-more"
-                />
-                {/* <Layout> */}
-                {/* <Planner /> */}
-                {/* </Layout> */}
-            </MuiThemeProvider>
+            <Layout>
+                <Planner />
+            </Layout>
         );
     }
 }
