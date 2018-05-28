@@ -12,10 +12,10 @@ import classes from './HeadBar.css';
  * A simple example of `AppBar` with an icon on the right.
  * By default, the left icon is a navigation-menu.
  */
-const HeadBar = () => (
+const HeadBar = (props) => (
         <AppBar position="static" color="default" > 
             <Toolbar className={classes.Header}>
-            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <IconButton className={classes.menuButton} color="inherit" aria-label="Menu" onClick={props.clicked}>
             <MenuIcon />
           </IconButton>
                 <Typography variant="title" color="inherit">

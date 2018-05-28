@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
-import Aux from '../../hoc/Aux';
+
+import Aux from '../../hoc/Aux/Aux';
+import Calendar from '../../components/UI/Calendar/Calendar';
 
 export default class Planner extends PureComponent {
     state = {};
@@ -7,7 +9,7 @@ export default class Planner extends PureComponent {
     render() {
         return (
             <Aux>
-                <p>Place for calendar</p>
+                <Calendar />
                 <p>place for workouts list</p>
             </Aux>
         );
