@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './SideBar.css';
 
-import Aux from '../../hoc/Aux/Aux';
+import Aux from '../../hoc/Auxil/Auxil';
 import Backdrop from '../../components/UI/Backdrop/Backdrop';
 
 const SideBar = props => {

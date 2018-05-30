@@ -2,9 +2,14 @@ import React from 'react';
 import DayPicker from 'react-day-picker';
 import classes from './Calendar.css';
 
-export default function Calendar() {
-    
-    return <DayPicker />;
-}
+const calendar = props => {
+    return (
+        <DayPicker
+            className={classes.Calendar}
+            onDayClick={props.onDateSelected}
+            selectedDays={props.currentlySelected}
+        />
+    );
+};
 
-export default Calendar;
+export default calendar;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Layout.css';
 
-import Aux from '../../hoc/Aux/Aux';
+import Aux from '../../hoc/Auxil/Auxil';
 import Screen from '../Screen/Screen';
 
 import HeadBar from '../../components/UI/HeadBar/HeadBar';
