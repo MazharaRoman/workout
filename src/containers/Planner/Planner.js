@@ -6,6 +6,16 @@ import Calendar from '../../components/UI/Calendar/Calendar';
 export default class Planner extends PureComponent {
     state = {
         selectedDate: null,
+        workous: [
+            {id:1, description: 'some description on workout number 1', name: 'name of workout', date:  exercises: [
+                {id: 1, name: 'pushups', description: {text: 'description of pushups', pictures: ['picture one', 'picture two']} },
+                {id: 2, name: 'pullups', description: {text: 'description of pullups', pictures: ['picture one', 'picture two']} }
+            ]},
+            {id:2, description: 'some description on workout number 1', name: 'name of workout', exercises: [
+                {id: 1, name: 'pushups', description: {text: 'description of pushups', pictures: ['picture one', 'picture two']} },
+                {id: 2, name: 'pullups', description: {text: 'description of pullups', pictures: ['picture one', 'picture two']} }
+            ]},
+        ]
     };
 
     getDate = () => {
@@ -17,6 +27,7 @@ export default class Planner extends PureComponent {
         return this.setState({ selectedDate: selected ? undefined : date });
     };
     render() {
+        const = 
         return (
             <Aux>
                 <Calendar
